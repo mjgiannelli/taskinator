@@ -1,3 +1,5 @@
+var pageContentEl = document.querySelector("#page-content");
+
 // create counter
 var taskIdCounter = 0;
 
@@ -100,3 +102,9 @@ var createTaskActions = function (taskId) {
 
 formEl.addEventListener("submit", taskFormHandler);
 
+// create delete button functionality
+var taskButtonHandler = function (event) {
+    console.log(event.target);
+};
+
+pageContentEl.addEventListener("click", taskButtonHandler);
